@@ -36,21 +36,21 @@
 				<div class = "content-box">
 				
 					<div class = "box-common cont-home-box">
+					
 						<h1>Alfred Cao</h1><br>
 						<h5>Candidate for BASc ECE</h5><br>
 						<h5>University of Waterloo</h5><br>
 						
-
 					</div>
 					
 					<div class = "box-common cont-project-box">
 						<h2> Projects </h2>
 						
 							
-								<a href =  target = "_blank">
+								<a href = /doc/ACT.pdf>
 									<div class = "project-box">
 										<div class = "project-img">
-											<img src = /pic/ACT.jpg />
+											<img src = /pic/ACT.png />
 										</div>
 										
 										<div class = "project-name">
@@ -61,10 +61,10 @@
 							
 						
 							
-								<a href =  target = "_blank">
+								<a href = /doc/Acquisition.pdf>
 									<div class = "project-box">
 										<div class = "project-img">
-											<img src = /pic/Acquisition.jpg />
+											<img src = /pic/Acquisition.png />
 										</div>
 										
 										<div class = "project-name">
@@ -75,10 +75,10 @@
 							
 						
 							
-								<a href =  target = "_blank">
+								<a href = https://github.com/cyssndy/cyssndy.github.io>
 									<div class = "project-box">
 										<div class = "project-img">
-											<img src = /pic/AlfredWebsite.jpg />
+											<img src = /pic/AlfredWebsite.png />
 										</div>
 										
 										<div class = "project-name">
@@ -89,10 +89,10 @@
 							
 						
 							
-								<a href = https://github.com/cyssndy/iiftech target = "_blank">
+								<a href = https://github.com/cyssndy/iiftech>
 									<div class = "project-box">
 										<div class = "project-img">
-											<img src = /pic/CompanyWebsite.jpg />
+											<img src = /pic/CompanyWebsite.png />
 										</div>
 										
 										<div class = "project-name">
@@ -103,10 +103,10 @@
 							
 						
 							
-								<a href =  target = "_blank">
+								<a href = >
 									<div class = "project-box">
 										<div class = "project-img">
-											<img src = /pic/Segway.jpg />
+											<img src = /pic/Segway.png />
 										</div>
 										
 										<div class = "project-name">
@@ -125,28 +125,50 @@
 					<div class = "box-common cont-resume-box">
 						<h2>Resume</h2>
 						<div class = "resume-box">
-							<h4>Language</h4>
-								<h5>W/ Machine</h5>
-								<h6>C# &nbsp VB &nbsp VBA &nbsp HTML &nbsp 
-									CSS &nbsp Java &nbsp JavaScript &nbsp 
-									jQuery &nbsp SQL</h6>
-								<h5>W/ Human</h5>
-								<h6>English, Chinese Mandarin</h6>
-							<h4>Experience</h4>
-								<h5>City of Toronto - Toronto Water &nbsp &nbsp <small>2015 Winter - IT Support</small></h5>
-								<h6>Database, SQL, Software</h6>
-								<h5>Xin-Yu Technology &nbsp &nbsp <small>2014 Summer - Technical Support & Customer Service</small></h5>
-								<h6>PC, CCTV cameras</h6>
-								<h5>Mudanjiang Petroleum &nbsp &nbsp <small>2013 Summer - Volunteer as Technical Support</small></h5>
-								<h6>CCTV cameras, PC network</h6>
-							<h4>Education</h4>
-								<h5>University of Waterloo</h5>
-								<h6>Candidate for Bachelor of Applied Science, Computer Engineering</h6>
-								<h5>St. David CSS.</h5>
-								<h6>Honour Roll Academic Achievement, Ontario Scholar</h6>
+							<shrotResume>
+	
+	<h4>W/ Machine</h4>
+		<h5>
+			C# &nbsp VB &nbsp VBA &nbsp HTML &nbsp 
+			CSS &nbsp Java &nbsp JavaScript &nbsp 
+			jQuery &nbsp SQL <br>
+			Unix System (Ububtu) &nbsp MS Office &nbsp 
+			Adobe Photoshop
+		</h5>
+	<h4>W/ Human</h4>
+		<h5>
+			GPA 4.0 &nbsp swimming &nbsp cycling &nbsp archery &nbsp
+			skiing &nbsp badminton &nbsp cooking &nbsp photograph &nbsp 
+			piano &nbsp	violin
+		</h5>
+	
+	<!--
+	<h4>Language</h4>
+		<h5>W/ Machine</h5>
+			<h6>C# &nbsp VB &nbsp VBA &nbsp HTML &nbsp 
+				CSS &nbsp Java &nbsp JavaScript &nbsp 
+				jQuery &nbsp SQL</h6>
+		<h5>W/ Human</h5>
+			<h6>English, Chinese Mandarin</h6>
+	<h4>Experience</h4>
+		<h5>City of Toronto - Toronto Water &nbsp &nbsp <small>2015 Winter - IT Support</small></h5>
+			<h6>Database, SQL, Software</h6>
+		<h5>Xin-Yu Technology &nbsp &nbsp <small>2014 Summer - Technical Support & Customer Service</small></h5>
+			<h6>PC, CCTV cameras</h6>
+		<h5>Mudanjiang Petroleum &nbsp &nbsp <small>2013 Summer - Volunteer as Technical Support</small></h5>
+			<h6>CCTV cameras, PC network</h6>
+	<h4>Education</h4>
+		<h5>University of Waterloo</h5>
+			<h6>Candidate for Bachelor of Applied Science, Computer Engineering</h6>
+			<h6>GPA 4.0, President’s Scholarship of Distinction</h6>
+		<h5>St. David CSS.</h5>
+			<h6>Honour Roll Academic Achievement, Ontario Scholar</h6>
+	-->
+</shortResume>
+
 						</div>
 						<div class = "full-resume">
-							<a href = #>Full Resume &#8594</a>
+							<a href = "/doc/Resume.pdf">Full Resume &#8594</a>
 						</div>
 					</div>
 					
