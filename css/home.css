@@ -29,11 +29,11 @@ body {
   height: 100%; }
   
   
-/*
+
 .back-ground{
    position: relative;
 }
-*/
+
 
 .css-slideshow figure{
    margin: 0;
@@ -51,12 +51,12 @@ body {
    opacity: 0;
    transition: opacity .5s;
 }
-
+*/
 .css-slideshow:hover figure figcaption{
    transition: opacity .5s;
    opacity: 1;
 }
-*/
+
 .css-slideshow figure{
    opacity:0;
 }
