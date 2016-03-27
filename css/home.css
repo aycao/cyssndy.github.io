@@ -61,6 +61,14 @@ body {
    opacity:0;
 }
 
+figure {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 figure:nth-child(1) {
    animation: xfade 48s 42s infinite;
 }
