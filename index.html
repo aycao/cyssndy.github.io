@@ -1,213 +1,168 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Alfred Cao - University of Waterloo ECE 1B</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="University of Waterloo ECE 1B Alfred Cao
-">
-		<link rel="stylesheet" type="text/css" href="/css/home.css">
-		<link rel="canonical" href="/">
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300' rel='stylesheet' type='text/css'>	  
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src = "/JScripts/JScript.js"></script>
-	</head>
-	
-	<body>
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+    <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+    <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+    <!--[if IE 9]> <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+    <meta charset="utf-8">
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+    <title>Alfred Cao - ECE @ University of Waterloo</title>
+    <!-- ============ Google fonts ============ -->
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'
+        type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800'
+        rel='stylesheet' type='text/css' />
+    <!-- ============ Add custom CSS here ============ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a> </li>
+                    <li><a href="/products">Resume</a> </li>
+                    <li><a href="/about-us">Projects</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+            <div id="banner">
+				<canvas id="clock">
+
+				</canvas>
+                <h1>
+                    Alfred is a <strong>good</strong> guy</h1>
+                <h5>
+                    <strong>cyssndy.github.io</strong></h5>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="registrationform">
+                <div class="form-horizontal">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.backstretch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        'use strict';
+
+        /* ========================== */
+        /* ::::::: Backstrech ::::::: */
+        /* ========================== */
+        // You may also attach Backstretch to a block-level element
+        $.backstretch(
+			[
+				"img/44.jpg",
+				"img/colorful.jpg",
+				"img/34.jpg",
+				"img/images.jpg"
+			],
+
+			{
+				duration: 4500,
+				fade: 1500
+			}
 		
-		<div  id="back-ground" class = "back-ground">
-			<figure> 
-				<img src="/bg/1.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/2.JPG"  />  
-			</figure> 
-			<figure> 
-				<img src="/bg/3.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/4.JPG"  />  
-			</figure> 
-			<figure> 
-				<img src="/bg/5.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/6.JPG"  />  
-			</figure> 
-			<figure> 
-				<img src="/bg/7.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/8.JPG"  />  
-			</figure> 
+		);
+		
+		var clkInterval;
+		
+		$(document).ready(function(){
+			// set clock canvas size
 			
-		</div>
-		<div class = "the-site">
-			<div class = "nav-col">
-				<div class = "nav-box">
-					<a class = "nav-link" id = "home" href = #>Home</a>
-					<a class = "nav-link" id = "project" href = #>Project</a>
-					<a class = "nav-link" id = "resume" href = #>Resume</a>
-					<!--<a class = "nav-link" id = "entre" href = #>Entrepreneurship</a>-->
-				</div>
-				
-				<div class = "footer">
-					<p>&copy Alfred Cao </p><br>
-<!--					<a href = # id = "langu"><p><small>中文/English</small></p></a>-->
-				</div>
-				<div class = "changeBackGround">
-					<a href = # id = "changeBG"><p>Click to change background</p></a>
-				</div>
-			</div>
+			var mClkCanvas = $("#clock")[0];
+			var clkOuterWidth = $(mClkCanvas).outerWidth();
+			mClkCanvas.width = clkOuterWidth;
+			mClkCanvas.height = clkOuterWidth;
 			
-			<div class = "content-col">
-				<div class = "content-box">
-				
-					<div class = "box-common cont-home-box">
-					
-						<h1>Alfred Cao</h1><br>
-						<h5>Candidate for BASc ECE</h5><br>
-						<h5>University of Waterloo</h5><br>
-						
-					</div>
-					
-					<div class = "box-common cont-project-box">
-						<h2> Projects </h2>
-						
-							
-								<a href = /doc/ACT.pdf>
-									<div class = "project-box">
-										<div class = "project-img">
-											<img src = /pic/ACT.png />
-										</div>
-										
-										<div class = "project-name">
-											<h5> Coop: ACT-Access Card Tracking Database </h5>
-										</div>
-									</div>
-								</a>
-							
-						
-							
-								<a href = /doc/Acquisition.pdf>
-									<div class = "project-box">
-										<div class = "project-img">
-											<img src = /pic/Acquisition.png />
-										</div>
-										
-										<div class = "project-name">
-											<h5> Coop: Acquisition Workplan Database </h5>
-										</div>
-									</div>
-								</a>
-							
-						
-							
-								<a href = https://github.com/cyssndy/cyssndy.github.io>
-									<div class = "project-box">
-										<div class = "project-img">
-											<img src = /pic/AlfredWebsite.png />
-										</div>
-										
-										<div class = "project-name">
-											<h5> Personal Website </h5>
-										</div>
-									</div>
-								</a>
-							
-						
-							
-						
-							
-								<a href = >
-									<div class = "project-box">
-										<div class = "project-img">
-											<img src = /pic/Segway.png />
-										</div>
-										
-										<div class = "project-name">
-											<h5> Arduino Segway Robot </h5>
-										</div>
-									</div>
-								</a>
-							
-						
-							
-						
-							
-						
-					</div>
-					
-					<div class = "box-common cont-resume-box">
-						<h2>Resume</h2>
-						<div class = "resume-box">
-							<shrotResume>
-	
-	<h4>W/ Machine</h4>
-		<h5>
-			<!--C# &nbsp VB &nbsp VBA &nbsp HTML &nbsp 
-			CSS &nbsp Java &nbsp JavaScript &nbsp 
-			jQuery &nbsp SQL &nbsp Arduino<br>
-			Unix System (Ububtu) &nbsp MS Office &nbsp 
-			Adobe Photoshop-->
-			Java &nbsp VBA &nbsp SQL &nbsp C# &nbsp JavaScript &nbsp 
-			jQuery &nbsp HTML &nbsp 
-			CSS &nbsp Arduino<br>
-			Unix System (Ububtu) &nbsp MS Office &nbsp 
-			Adobe Photoshop
-		</h5>
-	<h4>W/ Human</h4>
-		<h5>
-			GPA 4.0 &nbsp swimming &nbsp cycling &nbsp archery &nbsp
-			skiing &nbsp badminton &nbsp cooking &nbsp photograph &nbsp 
-			piano &nbsp	violin
-		</h5>
-	
-	<!--
-	<h4>Language</h4>
-		<h5>W/ Machine</h5>
-			<h6>C# &nbsp VB &nbsp VBA &nbsp HTML &nbsp 
-				CSS &nbsp Java &nbsp JavaScript &nbsp 
-				jQuery &nbsp SQL</h6>
-		<h5>W/ Human</h5>
-			<h6>English, Chinese Mandarin</h6>
-	<h4>Experience</h4>
-		<h5>City of Toronto - Toronto Water &nbsp &nbsp <small>2015 Winter - IT Support</small></h5>
-			<h6>Database, SQL, Software</h6>
-		<h5>Xin-Yu Technology &nbsp &nbsp <small>2014 Summer - Technical Support & Customer Service</small></h5>
-			<h6>PC, CCTV cameras</h6>
-		<h5>Mudanjiang Petroleum &nbsp &nbsp <small>2013 Summer - Volunteer as Technical Support</small></h5>
-			<h6>CCTV cameras, PC network</h6>
-	<h4>Education</h4>
-		<h5>University of Waterloo</h5>
-			<h6>Candidate for Bachelor of Applied Science, Computer Engineering</h6>
-			<h6>GPA 4.0, President’s Scholarship of Distinction</h6>
-		<h5>St. David CSS.</h5>
-			<h6>Honour Roll Academic Achievement, Ontario Scholar</h6>
-	-->
-</shortResume>
+			clkInterval = setInterval(updateClocks, 1000);
+		});
+		
+		var ssss = 0;
+		function updateClocks()
+		{
+			console.log(ssss++);
+			var now = new Date();
+			var h = now.getHours() % 12;
+			var m = now.getMinutes();
+			var s = now.getSeconds();
+			
+			// --- Analog clock ---//
 
-						</div>
-						<div class = "full-resume">
-							<a href = "/doc/Resume_2016_W.pdf">Full Resume &#8594</a>
-						</div>
-					</div>
-					
-					<div class = "box-common cont-company-box">
-						<h2>iif Technology</h2>
-						<div class = "company-box">
-							<h5>Launched in 2015 winter</h5><br>
-							<h5>Aim to build integreted smart home solution, 
-								and to assist other student start-ups
-								in aspects of computer, management system, database
-								and network. </h5><br>
-							<a href = #>Website Under Construction</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+			var canvas = document.getElementById("clock");
+			var context = canvas.getContext("2d");
+			
+			// You can change this to make the clock as big or small as you want.
+			// Just remember to adjust the canvas size if necessary.
+			var clkWidth = $("#clock")[0].width;
+			var clockRadius = clkWidth * 0.5;
 
+			// Make sure the clock is centered in the canvas
+			var clockX = canvas.width / 2;
+			var clockY = canvas.height / 2;
 
+			// Make sure TAU is defined (it's not by default)
+			Math.TAU = 2 * Math.PI;
+			
+			context.clearRect(0, 0, canvas.width, canvas.height);
+			
+			
+			
+			// Draw arms
+
+			function drawArm(progress, armThickness, armLength, armColor)
+			{
+				var armRadians = (Math.TAU * progress) - (Math.TAU/4);
+				var targetX = clockX + Math.cos(armRadians) * (armLength * clockRadius);
+				var targetY = clockY + Math.sin(armRadians) * (armLength * clockRadius);
+
+				context.lineWidth = armThickness;
+				context.strokeStyle = armColor;
+
+				context.beginPath();
+				context.moveTo(clockX, clockY); // Start at the center
+				context.lineTo(targetX, targetY); // Draw a line outwards
+				context.stroke();
+			}
+			
+			var hProgress = (h/12) + (1/12)*(m/60) + (1/12)*(1/60)*(s/60);
+			var mProgress =                 (m/60) +        (1/60)*(s/60);
+			var sProgress =                                        (s/60);
+			
+			console.log("h: " + hProgress + " m: " + mProgress + " s: " + sProgress) ;
+			
+			drawArm( hProgress, 10, 1/2, '#000000'); // Hour
+			drawArm( hProgress, 10, -5/clockRadius, '#000000'); // Hour
+
+			drawArm( mProgress,  4, 3/4, '#000000'); // Minute
+			drawArm( mProgress,  4, -2/clockRadius, '#000000'); // Minute
+
+			drawArm( sProgress,  2,   1, '#000000'); // Second
+			drawArm( sProgress,  2, -10/clockRadius, '#000000'); // Second
+
+		}
+		
+		
+    </script>
+</body>
 </html>
