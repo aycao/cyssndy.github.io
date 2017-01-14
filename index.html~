@@ -15,32 +15,7 @@
 	
 	<body>
 		
-		<div  id="back-ground" class = "back-ground">
-			<figure> 
-				<img src="/bg/1.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/2.JPG"  />  
-			</figure> 
-			<figure> 
-				<img src="/bg/3.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/4.JPG"  />  
-			</figure> 
-			<figure> 
-				<img src="/bg/5.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/6.JPG"  />  
-			</figure> 
-			<figure> 
-				<img src="/bg/7.JPG" /> 
-			</figure> 
-			<figure> 
-				<img src="/bg/8.JPG"  />  
-			</figure> 
-			
+		<div  id="back-ground">
 		</div>
 		<div class = "the-site">
 			<div class = "nav-col">
@@ -48,15 +23,12 @@
 					<a class = "nav-link" id = "home" href = #>Home</a>
 					<a class = "nav-link" id = "project" href = #>Project</a>
 					<a class = "nav-link" id = "resume" href = #>Resume</a>
-					<!--<a class = "nav-link" id = "entre" href = #>Entrepreneurship</a>-->
+					<a class = "nav-link" id = "entre" href = #>Entrepreneurship</a>
 				</div>
 				
 				<div class = "footer">
 					<p>&copy Alfred Cao </p><br>
 <!--					<a href = # id = "langu"><p><small>中文/English</small></p></a>-->
-				</div>
-				<div class = "changeBackGround">
-					<a href = # id = "changeBG"><p>Click to change background</p></a>
 				</div>
 			</div>
 			
@@ -117,6 +89,18 @@
 							
 						
 							
+								<a href = https://github.com/cyssndy/iiftech>
+									<div class = "project-box">
+										<div class = "project-img">
+											<img src = /pic/CompanyWebsite.png />
+										</div>
+										
+										<div class = "project-name">
+											<h5> Company Website </h5>
+										</div>
+									</div>
+								</a>
+							
 						
 							
 								<a href = >
@@ -145,14 +129,9 @@
 	
 	<h4>W/ Machine</h4>
 		<h5>
-			<!--C# &nbsp VB &nbsp VBA &nbsp HTML &nbsp 
+			C# &nbsp VB &nbsp VBA &nbsp HTML &nbsp 
 			CSS &nbsp Java &nbsp JavaScript &nbsp 
-			jQuery &nbsp SQL &nbsp Arduino<br>
-			Unix System (Ububtu) &nbsp MS Office &nbsp 
-			Adobe Photoshop-->
-			Java &nbsp VBA &nbsp SQL &nbsp C# &nbsp JavaScript &nbsp 
-			jQuery &nbsp HTML &nbsp 
-			CSS &nbsp Arduino<br>
+			jQuery &nbsp SQL <br>
 			Unix System (Ububtu) &nbsp MS Office &nbsp 
 			Adobe Photoshop
 		</h5>
@@ -189,7 +168,7 @@
 
 						</div>
 						<div class = "full-resume">
-							<a href = "/doc/Resume_2016_W.pdf">Full Resume &#8594</a>
+							<a href = "/doc/Resume.pdf">Full Resume &#8594</a>
 						</div>
 					</div>
 					
